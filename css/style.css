@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.img-fundo {
+    background-image: url('../img/bac1.jpeg');
+}
+
+.fundo {
+
+}
+
+.ptb-16 {
+    padding-top: 20rem !important;
+    padding-bottom: 20rem !important;
+}
+
+.font-2 {
+    font-size: 2rem;
+}
+
+.font-4 {
+    font-size: 3.7rem;
+}
+
+[data-titulo] {
+    opacity: 0;
+    font-size: 0.1rem!important;
+    transition: 0.5s;
+}
+
+[data-titulo="nome"].animate {
+    opacity: 0.8;
+    font-size:  3.5rem!important;
+    background-color: black; 
+}
+
+[data-titulo="servico"].animate {
+    opacity: 0.8;
+    font-size:  2.5rem!important;
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: .9s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-15px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(15px, 0, 0);
+}
+
+[data-anime="top"] {
+    transform: translate3d(0, -15px, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.img-left {
+    height: 10rem;
+    width: 10rem;
+    margin-right: 1rem;
+}
+
+.img-right {
+    height: 15rem;
+    width: 20rem;
+}
+
+.icone {
+    width: 5rem;
+    height: 5rem;
+}
+
+.icone2 {
+    width: 4rem;
+    height: 4rem;
+}
+
+.icone3 {
+    width: 3rem;
+    height: 4rem;
+}
+
+.icone4 {
+    width: 8rem;
+    height: 5rem;
+}
+
+.div-size {
+    height: 26rem;
+}
+
