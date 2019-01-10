@@ -98,3 +98,15 @@ body {
     height: 26rem;
 }
 
+.lingua {
+    background-image: url('../img/pexels-photo-160107.jpeg');
+    background-size: 140% 100%;
+}
+
+.tamanho {
+    width: 4rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    opacity: 0.8;
+}
+
