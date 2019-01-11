@@ -12,6 +12,10 @@ body {
     padding-bottom: 20rem !important;
 }
 
+.font-1 {
+    font-size: 1.9rem;
+}
+
 .font-2 {
     font-size: 2rem;
 }
@@ -22,6 +26,10 @@ body {
 
 .font-4 {
     font-size: 3.7rem;
+}
+
+[data-nav]{
+    
 }
 
 [data-titulo] {
@@ -41,15 +49,12 @@ body {
 }
 
 [data-body] {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 70%);
     font-size: 0.1rem!important;
     transition: 0.5s;
     color: rgba(248, 248, 248, 0)!important;
 }
 
-[data-body="body"].animate {
-    background-color: rgba(0, 0, 0, 70%);
-}
 
 [data-anime] {
     opacity: 0;
@@ -109,6 +114,10 @@ body {
     font-family: 'KoHo', sans-serif;
 }
 
+.font-Staatliches {
+    font-family: 'Staatliches', cursive;
+}
+
 .big-aspas {
     font-size: 7rem;
 }
@@ -119,7 +128,12 @@ body {
 }
 
 .font-logo {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    height: 18px;
+}
+
+.font-logo2 {
+    font-size: 0.7rem;
     height: 18px;
 }
 
@@ -127,9 +141,7 @@ body {
     font-size: 0.7rem;
 }
 
-.opacity-1 {
-    opacity: 1!important;
-}
+
 
 
 

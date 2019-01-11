@@ -31,11 +31,7 @@ class FormController {
     event() {
         setTimeout(function(){
             let dataTitulo = document.querySelectorAll('[data-titulo]');
-            let dataBody = document.querySelectorAll('[data-body]');
             dataTitulo.forEach(element => {
-                element.classList.add('animate');
-            });
-            dataBody.forEach(element => {
                 element.classList.add('animate');
             });
         }, 200);
@@ -47,6 +43,19 @@ class FormController {
             let windowTop = window.pageYOffset + window.innerHeight - 100;
 
             let target = document.querySelectorAll('[data-anime]');
+            let nav = document.querySelectorAll('[data-nav]');
+
+            nav.forEach(e=>{
+                if(windowTop > e.offsetTop){
+                    e.classList.add('bg-dark');
+                }
+            });
+
+            nav.forEach(e=>{
+                if(e.offsetTop == window.pageYOffset){
+                    e.classList.remove('bg-dark');
+                }
+            });
 
             target.forEach(e=>{
                 if(windowTop > e.offsetTop){
