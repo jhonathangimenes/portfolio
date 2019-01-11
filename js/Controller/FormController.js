@@ -31,10 +31,14 @@ class FormController {
     event() {
         setTimeout(function(){
             let dataTitulo = document.querySelectorAll('[data-titulo]');
+            let dataBody = document.querySelectorAll('[data-body]');
             dataTitulo.forEach(element => {
                 element.classList.add('animate');
             });
-        }, 500);
+            dataBody.forEach(element => {
+                element.classList.add('animate');
+            });
+        }, 200);
     }
 
     scrollEvents() {
