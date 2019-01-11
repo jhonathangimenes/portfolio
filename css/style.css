@@ -28,10 +28,6 @@ body {
     font-size: 3.7rem;
 }
 
-[data-nav]{
-    
-}
-
 [data-titulo] {
     opacity: 0;
     font-size: 0.1rem!important;
@@ -139,6 +135,19 @@ body {
 
 .font-logo2 {
     font-size: 0.7rem;
+}
+
+.logo-cv {
+    width: 20rem;
+    height: 20rem;
+}
+
+.scale2:hover {
+    transform: scale(1.1);
+}
+
+.font-contato {
+    font-size: 1.2rem;
 }
 
 
