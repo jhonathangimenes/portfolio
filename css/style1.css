@@ -31,10 +31,11 @@ ion-icon:hover {
 }
 
 .right {
-    position: absolute;
-    right: 0px;
-    margin-right: 10px;
+    width: 136px;
     margin-top: 75px;
+    right: 13px;
+    position: fixed;
+    z-index: 2;
 }
 
 .fa-phone {
@@ -45,18 +46,19 @@ ion-icon:hover {
     margin-left: 3px;
 }
 
-
 .fa-user-tie {
     margin-left: 5px;
 }
 
 .right li {
-    border-radius: 50px;
+    border-radius: 100px;
     background-color: #6c5ce7;
     color: #ffffff;
     padding: 13px; 
     margin-top: 5px;
     margin-bottom: 5px;
+    float: right;
+    height: 50px;
 }
 
 .right i {
@@ -69,36 +71,46 @@ ion-icon:hover {
 
 [data-option="right"] {
     width: 50px;
-    transition: 0.5s;
+    transition: 0.3s
 }
 
 [data-name="right"] {
     float: right;
     font-size: 0px;
     opacity: 0;
+    transition: 0.4s
 }
 
-[data-name="right"].animate {
+[data-option="right"]:hover  {
+    width: 110px;
+}
+
+[data-option="right"]:hover p  {
     font-size: 16px;
     opacity: 1;
 }
 
-
-
-[data-option="right"].animate {
-    width: 105px;
+[data-anime] {
+    opacity: 1;
+    transition: 0.2s;
 }
 
-[data-option]
-
-.right i:hover {
-    transform: scale(1.2);
+[data-anime="top"] {
+    transform: translate3d(0px, 0px, 0px);
 }
 
-section {
+[data-anime="top"].animate {
+    transform: translate3d(0px, -50px, 0px);
+    opacity: 0;
+}
+
+.nv-1 {
     background-image: url('../img/roxo1.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+section {
     height: 45rem;
     width: 100%;
 }
@@ -128,18 +140,48 @@ section {
     font-size: 25px;
 }
 
-[data-anime] {
-    opacity: 1;
-    transition: 0.2s;
+.nv-2 {
+    margin-top: 30px;
 }
 
-[data-anime="top"] {
-    transform: translate3d(0px, 0px, 0px);
+.nv-2 p {
+    font-size: 30px;
+    font-family: 'Special Elite', cursive;
 }
 
-[data-anime="top"].animate {
-    transform: translate3d(0px, -50px, 0px);
-    opacity: 0;
+.nv-2 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nv-2 ul li {
+    float: left;
+    font-size: 70px;
+    margin: 10px;
+    text-align: center;
+}
+
+.nv-2 ul li i {
+    font-size: 40px;
+}
+
+.nv-2 ul li p {
+    font-family: 'Righteous', cursive;
+    font-size: 10px;
+    margin-top: -20px;
+}
+
+.nv-2 img {
+    width: 200px;
+    height: 200px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.nv-2 .col-md-4 p {
+    font-family: 'KoHo', sans-serif;
+    font-size: 14px;
+    text-align: justify;
 }
 
 .font-staatleches {
