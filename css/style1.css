@@ -32,14 +32,26 @@ ion-icon:hover {
 
 .right {
     position: absolute;
-    width: 57px;
     right: 0px;
-    margin-right: 2px;
+    margin-right: 10px;
     margin-top: 75px;
 }
 
-.right i {
-    border-radius: 100px;
+.fa-phone {
+    margin-left: 5px;
+}
+
+.fa-home {
+    margin-left: 3px;
+}
+
+
+.fa-user-tie {
+    margin-left: 5px;
+}
+
+.right li {
+    border-radius: 50px;
     background-color: #6c5ce7;
     color: #ffffff;
     padding: 13px; 
@@ -47,18 +59,40 @@ ion-icon:hover {
     margin-bottom: 5px;
 }
 
+.right i {
+    padding: 0!important;
+}
+
+.right ul {
+    list-style-type: none;
+}
+
+[data-option="right"] {
+    width: 50px;
+    transition: 0.5s;
+}
+
+[data-name="right"] {
+    float: right;
+    font-size: 0px;
+    opacity: 0;
+}
+
+[data-name="right"].animate {
+    font-size: 16px;
+    opacity: 1;
+}
+
+
+
+[data-option="right"].animate {
+    width: 105px;
+}
+
+[data-option]
+
 .right i:hover {
     transform: scale(1.2);
-}
-
-.fa-user-tie {
-    padding-left: 14px!important;
-    padding-right: 14px!important;
-}
-
-.fa-home {
-    padding-left: 12px!important;
-    padding-right: 12px!important;
 }
 
 section {
@@ -95,17 +129,17 @@ section {
 }
 
 [data-anime] {
-    opacity: 0;
+    opacity: 1;
     transition: 0.2s;
 }
 
 [data-anime="top"] {
-    transform: translate3d(0px, -50px, 0px);
+    transform: translate3d(0px, 0px, 0px);
 }
 
 [data-anime="top"].animate {
-    transform: translate3d(0px, 0px, 0px);
-    opacity: 1;
+    transform: translate3d(0px, -50px, 0px);
+    opacity: 0;
 }
 
 .font-staatleches {

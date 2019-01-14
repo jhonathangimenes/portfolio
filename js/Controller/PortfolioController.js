@@ -4,6 +4,8 @@ class PortfolioController {
         
         this._menu = document.querySelector("#menu");
         this._menuOption = document.querySelector("[data-anime]");
+        this._menuIcone = document.querySelector("[data-option]");
+        this._nameIcone = document.querySelectorAll("[data-name]");
         this.initialize();
         
     }
@@ -11,6 +13,7 @@ class PortfolioController {
     initialize() {
         
         this.eventClick();
+        this.eventMenu()
 
     }
 
@@ -31,6 +34,14 @@ class PortfolioController {
 
             }
 
+        });
+
+    }
+
+    eventMenu() {
+        
+        this._menuIcone.addEventListener('mouseover', e=>{
+            alert("legal");
         });
 
     }
