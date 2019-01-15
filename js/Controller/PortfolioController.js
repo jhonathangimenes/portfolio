@@ -4,14 +4,15 @@ class PortfolioController {
         
         this._menu = document.querySelector("#menu");
         this._menuOption = document.querySelector("[data-anime]");
+        this._title = document.querySelectorAll("[data-title]");
         this.initialize();
         
     }
 
     initialize() {
         
+        this.eventTitle();
         this.eventClick();
-        this.eventMenu()
 
     }
 
@@ -34,6 +35,15 @@ class PortfolioController {
 
         });
 
+    }
+    
+    eventTitle(){
+        setTimeout(()=>{
+            this._title.forEach(e=>{
+                e.classList.add('animate');
+                console.log(e);
+            })
+        }, 300)
     }
 
 }

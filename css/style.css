@@ -104,6 +104,10 @@ ion-icon:hover {
     opacity: 0;
 }
 
+[data-anime="title"] {
+
+}
+
 .nv-1 {
     background-image: url('../img/roxo1.jpeg');
     background-repeat: no-repeat;
@@ -138,6 +142,30 @@ section {
     transform: translateY(-45%); 
     top: 43%;
     font-size: 25px;
+}
+
+[data-title="title-first"] {
+    opacity: 0;
+    transform: translateY(-100%); 
+    transition: .6s
+}
+
+[data-title="title-first"].animate {
+    font-size: 53px;
+    transform: translateY(-50%); 
+    opacity: 1;
+}
+
+[data-title="title-second"] {
+    opacity: 0;
+    transform: translateY(100%); 
+    transition: .6s
+}
+
+[data-title="title-second"].animate {
+    font-size: 25px;
+    transform: translateY(-45%); 
+    opacity: 1;
 }
 
 .nv-2 {
@@ -210,7 +238,7 @@ section {
 
 .nv-3 ul li i {
     margin-left: 8px;
-    margin-top: 10px;
+    margin-top: 15px;
     color: black;
 }
 
@@ -231,6 +259,50 @@ section {
 .nv-3 .col-md-4 img {
     width: 300px;
     height: 320px;
+}
+
+.logo-tags {
+    margin-top: 22px!important; 
+}
+
+.logo-php:hover {
+    transform: scale(1.2);
+    color: #74b9ff;
+}
+
+.logo-html5:hover {
+    transform: scale(1.2);
+    color: #e55039;
+}
+
+.logo-css3:hover {
+    transform: scale(1.2);
+    color: #5f27cd;
+}
+
+.logo-javascript:hover {
+    transform: scale(1.2);
+    color: #f6b93b;
+}
+
+.logo-bootstrap:hover {
+    transform: scale(1.2);
+    color: #8e44ad;
+}
+
+.logo-laravel:hover {
+    transform: scale(1.2);
+    color: #ee5253;
+}
+
+.logo-mysql:hover {
+    transform: scale(1.2);
+    color: #2980b9;
+}
+
+.logo-git:hover {
+    transform: scale(1.2);
+    color: #e74c3c;
 }
 
 .font-staatleches {
