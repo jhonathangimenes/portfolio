@@ -62,7 +62,6 @@ class PortfolioController {
 
             this._section.forEach(e=>{
                
-                
                 if(windowTop > e.offsetTop){
                     e.classList.add('animate');
                 }
