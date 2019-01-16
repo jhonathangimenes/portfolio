@@ -170,7 +170,7 @@ section {
 
 [data-section="left"] {
     opacity: 0;
-    transform: translate3d(-20px, 0px, 0px);
+    transform: translate3d(-12px, 0px, 0px);
     transition: 0.5s;
 }
 
@@ -182,7 +182,7 @@ section {
 
 [data-section="right"] {
     opacity: 0;
-    transform: translate3d(20px, 0px, 0px);
+    transform: translate3d(12px, 0px, 0px);
     transition: 0.5s;
 }
 
