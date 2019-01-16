@@ -5,6 +5,7 @@ class PortfolioController {
         this._menu = document.querySelector("#menu");
         this._menuOption = document.querySelector("[data-anime]");
         this._title = document.querySelectorAll("[data-title]");
+        this._section = document.querySelectorAll("[data-section]");
         this.initialize();
         
     }
@@ -13,6 +14,7 @@ class PortfolioController {
         
         this.eventTitle();
         this.eventClick();
+        this.eventSection();
 
     }
 
@@ -38,12 +40,37 @@ class PortfolioController {
     }
     
     eventTitle(){
+        
         setTimeout(()=>{
+
             this._title.forEach(e=>{
+
                 e.classList.add('animate');
-                console.log(e);
-            })
+
+            });
+
         }, 300)
+
+    }
+
+    eventSection() {
+
+        window.addEventListener('scroll', e=>{
+            
+            let windowTop = window.pageYOffset + window.innerHeight - 100;
+            
+
+            this._section.forEach(e=>{
+               
+                
+                if(windowTop > e.offsetTop){
+                    e.classList.add('animate');
+                }
+                
+           });
+             
+        });
+
     }
 
 }

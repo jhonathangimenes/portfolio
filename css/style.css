@@ -104,10 +104,6 @@ ion-icon:hover {
     opacity: 0;
 }
 
-[data-anime="title"] {
-
-}
-
 .nv-1 {
     background-image: url('../img/roxo1.jpeg');
     background-repeat: no-repeat;
@@ -166,6 +162,39 @@ section {
     font-size: 25px;
     transform: translateY(-45%); 
     opacity: 1;
+}
+
+[data-section="left"] {
+    opacity: 0;
+    transform: translate3d(-20px, 0px, 0px);
+    transition: 0.5s;
+}
+
+[data-section="top"] {
+    opacity: 0;
+    transform: translate3d(0px, -20px, 0px);
+    transition: 0.5s;
+}
+
+[data-section="right"] {
+    opacity: 0;
+    transform: translate3d(20px, 0px, 0px);
+    transition: 0.5s;
+}
+
+[data-section="left"].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+[data-section="top"].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+[data-section="right"].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
 }
 
 .nv-2 {
@@ -263,6 +292,8 @@ section {
 
 .logo-tags {
     margin-top: 22px!important; 
+    margin-left: 0!important;
+    margin-right: 0!important;
 }
 
 .logo-php:hover {
