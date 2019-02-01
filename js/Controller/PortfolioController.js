@@ -57,13 +57,15 @@ class PortfolioController {
 
         window.addEventListener('scroll', e=>{
             
-            let windowTop = window.pageYOffset + window.innerHeight - 100;
+            let windowTop = window.pageYOffset +((window.innerHeight * 3) / 4);
             
-
             this._section.forEach(e=>{
                
-                if(windowTop > e.offsetTop){
+                if((windowTop) > e.offsetTop){
                     e.classList.add('animate');
+                  
+                    console.log("window"+ windowTop);
+                    console.log("off"+ e.offsetTop);
                 }
                 
            });
