@@ -15,7 +15,8 @@ class PortfolioController {
         this.eventTitle();
         this.eventClick();
         this.eventSection();
-
+        let party2 = document.querySelector("#party2");
+        console.log(party2.offsetTop);
     }
 
     eventClick() {
@@ -63,9 +64,6 @@ class PortfolioController {
                
                 if((windowTop) > e.offsetTop){
                     e.classList.add('animate');
-                  
-                    console.log("window"+ windowTop);
-                    console.log("off"+ e.offsetTop);
                 }
                 
            });
